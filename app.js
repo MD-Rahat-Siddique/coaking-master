@@ -24,6 +24,8 @@ function loadFoods(foods) {
     }
 }
 
+
+// Search Foods : 
 const input = document.getElementById('input');
 document.getElementById('search').addEventListener('click', function () {
     document.getElementById('default-foods').style.display = 'none';
@@ -40,6 +42,7 @@ document.getElementById('search').addEventListener('click', function () {
 
     function displayFoods(data) {
         const foodProducts = document.getElementById('searchFoods');
+        foodProducts.innerHTML = '';
         for (let i = 0; i < data.length; i++) {
             const item = data[i];
             // console.log(item);
