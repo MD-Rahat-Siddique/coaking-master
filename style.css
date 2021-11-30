@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(214, 197, 42);
+}
+.searchBar-container{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+}
+.search-bar input{
+    width: 300px;
+    padding: 8px;
+}
+.search-bar button{
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: magenta;
+    color: white;
+}
+.foods-container{
+    display: flex;
+    justify-content: center;
+}
+#foods{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+}
+.food-div{
+    border: 1px solid goldenrod;
+    width: 350px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+}
+.food-div img{
+    background-color: rgb(59, 66, 163);
+    width: 100%;
+}
+
+/* Search Foods */
+#search-foods{
+    display: none;
+}
+#searchFoods{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+}
+
+/* Error Message */
+#errorMsg{
+    display: none;
+    color: red;
+    text-align: center;
+}
